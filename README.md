@@ -11,7 +11,7 @@ A browser extension to streamline opening pull requests related to Taiga tasks.
 
 1. Clone this repository:
    ```sh
-   git clone https://github.com/yourusername/taiga-link-helper.git
+   git clone https://github.com/6c6a64/taiga-link-helper.git
    ```
 2. Edit `manifest.json` to specify your Taiga URL.
 3. Open your browser's extensions page:
