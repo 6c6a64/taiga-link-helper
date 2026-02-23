@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Taiga Link Helper",
+  "version": "1.0",
+  "description": "Detects PR/issue links on Taiga and prompts to open them.",
+  "permissions": ["tabs", "<all_urls>"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+"content_scripts": [
+  {
+    "matches": ["https://taiga.url/*"],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }
+],
+  "browser_action": {
+    "default_title": "Taiga Link Helper"
+  }
+}
